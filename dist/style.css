@@ -102,12 +102,58 @@ header .container .down-header ul li img {
 #more-possibilities {
   display: flex;
   flex-flow: column nowrap;
+  padding-top: 50px;
   background-color: #E8E8E8;
 }
 #more-possibilities h2 {
   text-align: center;
   font-size: 3rem;
   font-weight: 200;
+}
+#more-possibilities .cards-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+#more-possibilities .cards-wrapper .card {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 31%;
+}
+#more-possibilities .cards-wrapper .card:nth-child(2) {
+  margin: 0 2%;
+}
+#more-possibilities .cards-wrapper .card img {
+  width: 100%;
+}
+#more-possibilities .cards-wrapper .card .card-text {
+  padding: 25px 20px;
+  background-color: #FFFFFF;
+}
+#more-possibilities .cards-wrapper .card .card-text h3 span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+}
+#more-possibilities .cards-wrapper .card .card-text h3 span strong {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #009CFF;
+}
+#more-possibilities .cards-wrapper .card .card-text p {
+  padding: 20px 0;
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+#more-possibilities .cards-wrapper .card .card-text a {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #009CFF;
 }
 
 * {
@@ -130,6 +176,6 @@ a {
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }

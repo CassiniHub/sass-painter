@@ -123,4 +123,79 @@ header {
         }
     }
 }
+
+// Main possibilities
+// Cards
+#more-possibilities {
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding-top: 50px;
+
+    background-color: $body-bg-color;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
+        justify-content: center;
+
+        margin-top: 30px;
+        margin-bottom: 80px;
+        
+        .card {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 0 31%;
+
+            &:nth-child(2) {
+                margin: 0 2%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .card-text {
+                padding: 25px 20px;
+
+                background-color: $card-bg-color;
+
+                h3 {
+                    span {
+                        font-size: 1.5rem;
+                            font-weight: 400;
+    
+                            color: black;
+                        strong {
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            font-style: italic;
+    
+                            color: $header-blue-icon-color;
+                        }
+                    }
+                }
+
+                p {
+                    padding: 20px 0;
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                    line-height: 2rem;
+                }
+
+                a {
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                    color: $header-blue-icon-color;
+                }
+            }
+        }
+    }
 }
