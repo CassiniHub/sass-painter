@@ -155,6 +155,97 @@ header .container .down-header ul li img {
   font-weight: 200;
   color: #009CFF;
 }
+#more-possibilities .learn-more-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+#more-possibilities .learn-more-wrapper .learn-more {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 50%;
+  position: relative;
+  height: 300px;
+  color: white;
+}
+#more-possibilities .learn-more-wrapper .learn-more.text {
+  padding: 60px 50px;
+}
+#more-possibilities .learn-more-wrapper .learn-more.text h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+#more-possibilities .learn-more-wrapper .learn-more.text p {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2.8rem;
+}
+#more-possibilities .learn-more-wrapper .learn-more.text a {
+  padding: 10px 35px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+}
+#more-possibilities .learn-more-wrapper .learn-more.purple {
+  background-color: #3C1567;
+}
+#more-possibilities .learn-more-wrapper .learn-more.gray {
+  background-color: #3C3C3C;
+}
+#more-possibilities .learn-more-wrapper .learn-more.blue {
+  background-color: #0072BC;
+}
+#more-possibilities .learn-more-wrapper .learn-more img {
+  height: 100%;
+}
+#more-possibilities .learn-more-wrapper .learn-more img.wacom-overlay {
+  position: absolute;
+  left: 15px;
+  width: 450px;
+}
+
+#first-footer {
+  padding: 40px 0;
+  background-color: #ECECEC;
+}
+#first-footer .footer-wrapper .top-first-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+#first-footer .footer-wrapper .top-first-footer ul {
+  flex: 1 0 25%;
+}
+#first-footer .footer-wrapper .top-first-footer ul li {
+  margin-bottom: 10px;
+}
+#first-footer .footer-wrapper .top-first-footer ul li:first-child {
+  margin-bottom: 15px;
+}
+#first-footer .footer-wrapper .top-first-footer ul li:first-child a {
+  font-size: 1.3rem;
+}
+#first-footer .footer-wrapper .top-first-footer ul li a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+}
+#first-footer .footer-wrapper .first-down-footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+#first-footer .footer-wrapper .first-down-footer ul li {
+  margin: 0 5px;
+}
+#first-footer .footer-wrapper .first-down-footer ul li:last-child {
+  margin-right: 0;
+}
+#first-footer .footer-wrapper .first-down-footer ul li a {
+  font-size: 3rem;
+  color: #0072BC;
+}
 
 * {
   padding: 0;

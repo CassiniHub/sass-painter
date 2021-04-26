@@ -37,3 +37,9 @@ $btn-padding: 10px 35px;
     font-size: 1.8rem;
     font-weight: 300;
 }
+
+@mixin learn-more-btns {
+    padding: $btn-padding;
+    font-size: 1.3rem;
+    font-weight: 300;
+}

@@ -198,4 +198,117 @@ header {
             }
         }
     }
+
+    .learn-more-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+
+        .learn-more {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1 1 50%;
+
+            position: relative;
+
+            height: 300px;
+
+            color: white;
+
+            &.text{
+                padding: 60px 50px;
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                }
+    
+                p {
+                    margin: 20px 0;
+    
+                    font-size: 1.5rem;
+                    font-weight: 200;
+                    line-height: 2.8rem;
+                }
+
+                a {
+                    @include learn-more-btns;
+                    color: black;
+                    background-color: white;
+                }
+            }
+            &.purple {
+                background-color: $purple-bg-learn-color;
+            }
+            &.gray {
+                background-color: $gray-bg-learn-color;
+            }
+            &.blue {
+                background-color: $blue-bg-learn-color;
+            }
+
+            img {
+                height: 100%;
+            }
+
+            img.wacom-overlay {
+                position: absolute;
+                left: 15px;
+
+                width: 450px;
+            }
+        }
+    }
+}
+
+// First Footer
+#first-footer {
+    padding: 40px 0;
+
+    background-color: $first-footer-bg-color;
+    .footer-wrapper {
+        .top-first-footer {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            
+            ul {
+                flex: 1 0 25%;
+    
+                li {
+                    margin-bottom: 10px;
+
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+                    &:first-child a{
+                        font-size: 1.3rem;
+                    }
+                }
+    
+                li a {
+                    color: black;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    
+        .first-down-footer {
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+
+                li {
+                    margin: 0 5px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a{
+                        font-size: 3rem;
+                        color: $blue-bg-learn-color;
+                    }
+                }
+            }
+        }
+    }
 }
