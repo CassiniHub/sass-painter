@@ -1,0 +1,51 @@
+// HEADER
+header {
+    padding: 20px 0;
+    background-color: $header-footer-bg-color;
+
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+
+        width: 80%;
+        margin: auto;
+
+        .top-header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                align-items: baseline;
+
+                li {
+                    padding: 0 10px;
+                    color: $header-footer-gray-text-color;
+                }
+            }
+        }
+
+        .down-header {
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: baseline;
+
+                li {
+                    padding: 0 25px;
+
+                    font-size: 1.1rem;
+                    color: white;
+                    
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
