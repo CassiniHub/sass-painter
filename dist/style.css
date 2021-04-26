@@ -5,8 +5,6 @@ header {
 header .container {
   display: flex;
   flex-flow: column wrap;
-  width: 80%;
-  margin: auto;
 }
 header .container .top-header {
   display: flex;
@@ -34,12 +32,82 @@ header .container .down-header ul li {
   font-size: 1.1rem;
   color: white;
 }
+header .container .down-header ul li:first-child {
+  padding-left: 0;
+}
 header .container .down-header ul li img {
   height: 30px;
 }
 
 .jumbotron {
-  background: url("/img/bg-painter-home.jpg");
+  background-image: url("img/bg-painter-home.jpg");
+  background-size: 2000px;
+  background-position: 100% 50%;
+  height: 500px;
+}
+.jumbotron .jumbo-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 500px;
+}
+.jumbotron .jumbo-text .jumbo-claim {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+}
+.jumbotron .jumbo-text .jumbo-claim img {
+  width: 300px;
+}
+.jumbotron .jumbo-text .jumbo-claim span {
+  margin-top: 25px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.jumbotron .jumbo-text .jumbo-offer {
+  margin: 40px 0;
+  color: #CC15B3;
+}
+.jumbotron .jumbo-text .jumbo-offer h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.jumbotron .jumbo-text .jumbo-offer span {
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-style: italic;
+}
+.jumbotron .jumbo-text .jumbo-btns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.jumbotron .jumbo-text .jumbo-btns .solid-btn {
+  padding: 10px 35px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-right: 25px;
+  color: white;
+  background-color: #101010;
+}
+.jumbotron .jumbo-text .jumbo-btns .empty-btn {
+  padding: 10px 35px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: black;
+  border: 2px solid black;
+}
+
+#more-possibilities {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #E8E8E8;
+}
+#more-possibilities h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
 }
 
 * {
@@ -59,4 +127,9 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
 }

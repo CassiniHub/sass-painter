@@ -1,5 +1,6 @@
-@import "partials/variables";
-@import "partials/homepage";
+@import "partials/_variables";
+@import "partials/_components";
+@import "partials/_homepage";
 
 * {
     padding: 0;
@@ -18,4 +19,8 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    @include container-width;
 }

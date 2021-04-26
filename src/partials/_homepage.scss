@@ -7,9 +7,6 @@ header {
         display: flex;
         flex-flow: column wrap;
 
-        width: 80%;
-        margin: auto;
-
         .top-header {
             display: flex;
             flex-flow: row nowrap;
@@ -40,11 +37,15 @@ header {
 
                     font-size: 1.1rem;
                     color: white;
-                    
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
                     img {
                         height: 30px;
-                    }
-                }
+                    }                    
+                }  
             }
         }
     }
@@ -54,4 +55,72 @@ header {
 // Jumbotron
 .jumbotron {
     background-image: url('img/bg-painter-home.jpg');
+    background-size: 2000px;
+    background-position: 100% 50%;
+    height: 500px;
+
+    .jumbo-text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        height: 500px;
+
+        .jumbo-claim {
+            display: flex;
+            flex-flow: column wrap;
+
+            width: 40%;
+
+            img {
+                width: 300px;
+            }
+            span {
+                margin-top: 25px;
+
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+
+        .jumbo-offer {
+            margin: 40px 0;
+            color: $jumbo-offer-text-color;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                font-style: italic;
+
+            }
+            span {
+                font-size: 1.6rem;
+                font-weight: 200;
+                font-style: italic;
+            }
+        }
+
+        .jumbo-btns {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+
+            .solid-btn {
+                @include jumbo-btns;
+
+                margin-right: 25px;
+
+                color: white;
+                background-color: $header-footer-bg-color;
+            }
+
+            .empty-btn {
+                @include jumbo-btns;
+
+                color: black;
+                border: 2px solid black;
+            }
+        }
+    }
+}
 }

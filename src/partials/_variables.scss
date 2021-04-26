@@ -19,4 +19,21 @@ $blue-bg-learn-color: #0072BC;
 // Footer
 $first-footer-bg-color: #ECECEC;
 
+// - - - - - - - - - - - - - - -
+
+// Padding / Margin
+$btn-padding: 10px 35px;
+
+// - - - - - - - - - - - - - - -
+
 // MIXINS
+@mixin container-width {
+    width: 70%;
+    margin: auto;
+}
+
+@mixin jumbo-btns {
+    padding: $btn-padding;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
