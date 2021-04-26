@@ -261,10 +261,10 @@ header {
 
 // First Footer
 #first-footer {
-    padding: 40px 0;
+    padding-top: 40px;
 
     background-color: $first-footer-bg-color;
-    .footer-wrapper {
+    .first-footer-wrapper {
         .top-first-footer {
             display: flex;
             flex-flow: row nowrap;
@@ -293,6 +293,7 @@ header {
         }
     
         .first-down-footer {
+            padding: 20px 0;
             ul {
                 display: flex;
                 flex-flow: row nowrap;
@@ -306,6 +307,54 @@ header {
                     a{
                         font-size: 3rem;
                         color: $blue-bg-learn-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    padding: 20px 0;
+    background-color: $header-footer-bg-color;
+
+    .second-footer-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .left-footer {
+            flex: 1 0 20%;
+            img {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .right-footer {
+            flex: 1 0 80%;
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                align-items: center;
+
+                height: 100%;
+
+                li {
+                    margin: 0 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:last-child a{
+                       color: white;
+                    }
+
+                    a {
+                        color: $header-footer-gray-text-color;
                     }
                 }
             }
